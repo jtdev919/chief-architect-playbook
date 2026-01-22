@@ -1,3 +1,7 @@
+# C4 Diagram — Level 3: Component View (Order Service)  
+This diagram shows the internal components of the Order Service.
+
+```mermaid
 C4Component
     title Order Service — Component View (L3)
 

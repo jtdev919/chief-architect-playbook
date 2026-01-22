@@ -1,3 +1,7 @@
+# Domain Model Diagram  
+A domain-driven view of key business entities and relationships.
+
+```mermaid
 classDiagram
     class Order {
         +orderId

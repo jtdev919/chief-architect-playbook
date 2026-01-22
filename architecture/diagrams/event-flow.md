@@ -1,3 +1,7 @@
+# Event Flow — Order Lifecycle  
+This sequence diagram shows how events flow across services in an event-driven architecture.
+
+```mermaid
 sequenceDiagram
     participant API as API Gateway
     participant OS as Order Service

@@ -189,7 +189,7 @@ Once the failed region is restored:
 - Event consumer lag  
 - Data corruption indicators  
 
----
+--- 
 
 # 📈 9. KPIs & SLOs
 

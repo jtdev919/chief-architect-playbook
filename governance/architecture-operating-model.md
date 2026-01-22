@@ -54,6 +54,7 @@ flowchart LR
     C -->|No| E[Architecture Review]
     E --> F[Decision & Guidance]
     F --> D[Build & Deploy]
+```	
 
 ### Workflow Principles
 

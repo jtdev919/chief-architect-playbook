@@ -194,4 +194,38 @@ Architecture produces and maintains three categories of artifacts:
 
 ---
 
-## 📈 9. KP
+## 📈 9. KPIs & Success Measures
+
+### Delivery
+
+- Reduction in cycle time  
+- Faster integration onboarding  
+- % of reusable components adopted  
+
+### Quality
+
+- Reduction in production incidents  
+- Reduction in integration defects  
+- Resiliency test pass rate  
+
+### Architecture Health
+
+- % of services aligned to standards  
+- % of APIs with versioning & governance  
+- % of events with schema registry compliance  
+
+### Business Impact
+
+- Cost savings from platform reuse  
+- Faster M&A integration  
+- Improved customer experience metrics  
+
+---
+
+## 📄 10. Related Artifacts
+
+- `/strategy/north-star-architecture.md`  
+- `/architecture/diagrams/`  
+- `/governance/adr-template.md`  
+- `/governance/raci.md`  
+- `/governance/architecture-review-process.md`

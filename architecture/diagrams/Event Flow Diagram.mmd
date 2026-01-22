@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant API as API Gateway
+    participant OS as Order Service
+    participant EB as Event Bus
+    participant IS as Inventory Service
+
+    API->>OS: POST /orders
+    OS->>OS: Validate & process order
+    OS->>EB: Publish OrderCreated event
+    EB->>IS: Deliver OrderCreated event
+    IS->>IS: Reserve inventory
+    IS->>EB: Publish InventoryReserved event

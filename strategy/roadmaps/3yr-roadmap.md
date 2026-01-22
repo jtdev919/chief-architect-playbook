@@ -10,6 +10,7 @@ This roadmap outlines a three‑year evolution of enterprise technology capabili
 
 ## **Year 1 — Stabilize & Standardize**
 
+``` 
 Year 1 (Stabilize & Standardize)
 │
 ├── Integration Modernization
@@ -33,14 +34,16 @@ Year 1 (Stabilize & Standardize)
 │     ├─ AI governance (risk, PHI/PII monitoring)
 │
 └── Engineering Excellence
-├─ CI/CD modernization
-├─ Automated code reviews (AI-assisted)
-└─ DevSecOps baseline
+      ├─ CI/CD modernization
+      ├─ Automated code reviews (AI-assisted)
+      └─ DevSecOps baseline
+```
 
 ---
 
 ## **Year 2 — Optimize & Automate**
 
+```
 Year 2 (Optimize & Automate)
 │
 ├── Application Modernization
@@ -64,14 +67,16 @@ Year 2 (Optimize & Automate)
 │     ├─ AI-assisted observability & guided remediation
 │
 └── Digital Experience
-├─ AI-powered product guidance (Commerce)
-├─ Mobile-first architecture enhancements
-└─ RPA expansion for operational efficiency
+      ├─ AI-powered product guidance (Commerce)
+      ├─ Mobile-first architecture enhancements
+      └─ RPA expansion for operational efficiency
+```
 
 ---
 
 ## **Year 3 — Scale & Differentiate**
 
+```
 Year 3 (Scale & Differentiate)
 │
 ├── Application Modernization
@@ -95,10 +100,10 @@ Year 3 (Scale & Differentiate)
 │     ├─ ML-driven forecasting & personalization
 │
 └── Business Transformation
-├─ End-to-end digital supply chain visibility
-├─ Real-time profitability & pricing engines
-└── Enterprise-wide automation & workflow intelligence
-
+      ├─ End-to-end digital supply chain visibility
+      ├─ Real-time profitability & pricing engines
+      └─ Enterprise-wide automation & workflow intelligence
+```
 
 ---
 

@@ -71,31 +71,32 @@ flowchart LR
 ```
 
 API Gateway Responsibilities
-Authentication (OAuth2 / OIDC)
+-Authentication (OAuth2 / OIDC)
 
-Authorization (RBAC / ABAC)
+-Authorization (RBAC / ABAC)
 
-Rate limiting & throttling
+-Rate limiting & throttling
 
-Threat protection (WAF)
+-Threat protection (WAF)
 
-Schema validation
+-Schema validation
 
-Logging & tracing injection
+-Logging & tracing injection
 
 API Security Controls
-mTLS between internal services
+-mTLS between internal services
 
-Input validation
+-Input validation
 
-Output sanitization
+-Output sanitization
 
-Versioned APIs
+-Versioned APIs
 
-Audit logging
+-Audit logging
 
 # ⚡ 5. Event Security Architecture
 
+```mermaid
 flowchart LR
     PRODUCER[Producer Service]
     BUS[Event Bus / Event Mesh]
@@ -106,7 +107,7 @@ flowchart LR
 ```
 
 Event Security Controls
-Topic‑level ACLs
+-Topic‑level ACLs
 
 Producer identity verification
 

@@ -56,14 +56,14 @@ flowchart LR
     F --> D[Build & Deploy]
 ```
 	
-	Workflow Principles
+### 	Workflow Principles
 Self‑service first: Teams use checklists, templates, and standards.
 
 Review only when needed: Triggered by risk, not bureaucracy.
 
 Fast turnaround: Reviews completed within 48 hours.
 
-🔑 4. Key Concepts
+## 🔑 4. Key Concepts
 Self‑Service First
 Teams rely on:
 
@@ -97,7 +97,7 @@ Clear, actionable feedback
 
 Lightweight documentation
 
-🧩 5. Decision Rights (RACI)
+## 🧩 5. Decision Rights (RACI)
 Decision Type	Product Team	Architecture	Platform Eng	Security
 API design	R	A	C	C
 Event schema	R	A	C	C
@@ -112,7 +112,7 @@ R = Responsible, A = Accountable, C = Consulted
 Architecture is accountable for standards, patterns, and long‑term direction.
 Teams remain responsible for delivery and implementation.
 
-🏛️ 6. Architecture Review Process
+## 🏛️ 6. Architecture Review Process
 A lightweight, predictable process that ensures alignment without slowing teams.
 
 Step 1 — Team Submits Design
@@ -155,7 +155,7 @@ Linked to the service or initiative
 
 Stored in the appropriate repo
 
-🧱 7. Architecture Artifacts
+## 🧱 7. Architecture Artifacts
 Architecture produces and maintains three categories of artifacts:
 
 1. Strategic
@@ -183,14 +183,14 @@ Integration patterns
 
 Cloud architecture blueprints
 
-🔄 8. Operating Cadence
+## 🔄 8. Operating Cadence
 Cadence	Activity
 Weekly	Architecture sync with platform & engineering
 Bi‑Weekly	Design reviews
 Monthly	Program alignment + roadmap updates
 Quarterly	Strategic planning + capability model updates
 Annually	Architecture maturity assessment
-📈 9. KPIs & Success Measures
+##📈 9. KPIs & Success Measures
 Delivery
 Reduction in cycle time
 
@@ -219,7 +219,7 @@ Faster M&A integration
 
 Improved customer experience metrics
 
-📄 10. Related Artifacts
+##📄 10. Related Artifacts
 /strategy/north-star-architecture.md
 
 /architecture/diagrams/

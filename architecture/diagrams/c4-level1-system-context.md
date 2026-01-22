@@ -1,0 +1,30 @@
+# C4 Diagram — Level 1: System Context  
+This diagram shows the high‑level ecosystem of the enterprise platform, its users, and external systems.
+
+```mermaid
+C4Context
+    title North Star Architecture — System Context (L1)
+
+    Person(customer, "Customer", "Uses digital products and services")
+    Person(engineer, "Engineering Team", "Builds and deploys services")
+
+    System_Boundary(enterprise, "Enterprise Platform") {
+        System(apiPlatform, "API Platform", "Unified API gateway, routing, governance")
+        System(eventPlatform, "Event Streaming Platform", "Real-time events, pub/sub, streaming")
+        System(dataPlatform, "Data Platform", "Lakehouse, pipelines, analytics")
+        System(domainServices, "Domain Services", "Microservices aligned to business capabilities")
+    }
+
+    System_Ext(crm, "CRM System", "External or legacy CRM")
+    System_Ext(erp, "ERP System", "Finance, supply chain, HR")
+    System_Ext(partners, "Partner Systems", "External integrations")
+
+    Rel(customer, apiPlatform, "Uses via mobile/web apps")
+    Rel(engineer, domainServices, "Builds & deploys")
+    Rel(apiPlatform, domainServices, "Routes API calls")
+    Rel(domainServices, eventPlatform, "Publishes/consumes events")
+    Rel(domainServices, dataPlatform, "Sends operational data")
+    Rel(dataPlatform, domainServices, "Provides analytical insights")
+    Rel(apiPlatform, crm, "Integrates with")
+    Rel(apiPlatform, erp, "Integrates with")
+    Rel(eventPlatform, partners, "Event exchange")

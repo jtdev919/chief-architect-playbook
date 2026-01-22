@@ -1,161 +1,230 @@
-# 🌟 North Star Architecture  
-A unified vision for scalable, resilient, and business‑aligned enterprise systems.
+# 🏛️ Architecture Operating Model
+
+A practical, scalable operating model that defines how architecture engages with teams, how decisions are made, and how governance is applied without slowing delivery.
 
 ---
 
-## 🎯 Purpose  
-This North Star Architecture defines the long‑term direction for the enterprise. It aligns technology, platforms, and teams around a shared vision that accelerates delivery, reduces complexity, and enables the business to scale with confidence.
+## 📘 1. Introduction
+
+The Architecture Operating Model ensures that architectural decisions are:
+
+- **Aligned** with business strategy  
+- **Consistent** across domains  
+- **Scalable** as the enterprise grows  
+- **Empowering** for product and engineering teams  
+- **Measured** through clear KPIs  
+
+This model balances governance with team autonomy, enabling fast, high‑quality delivery across the enterprise.
 
 ---
 
-# 🧭 1. Vision Statement  
-Create a **modular, API‑led, event‑driven enterprise platform** that enables product teams to deliver features independently, integrate seamlessly, and scale globally — while maintaining strong governance, reliability, and business alignment.
+## 🧭 2. Engagement Model
+
+Architecture engages with teams through three modes:
+
+### **Strategic Engagement (Quarterly)**
+- Define and refine the North Star Architecture  
+- Update capability models  
+- Align with business strategy  
+- Prioritize platform investments  
+
+### **Program Engagement (Monthly)**
+- Support major initiatives  
+- Provide reference architectures  
+- Validate integration patterns  
+- Ensure cross‑domain alignment  
+
+### **Team Engagement (On Demand)**
+- Lightweight design reviews  
+- API and event schema guidance  
+- Cloud architecture support  
+- Performance and resiliency patterns  
+
+This model ensures architecture is proactive, not reactive.
 
 ---
 
-# 🏛️ 2. Guiding Principles  
+## 🏗️ 3. Governance Workflow
 
-### **1. Business Outcomes First**  
-Architecture exists to accelerate measurable business value.
+```mermaid
+flowchart LR
+    A[Team Creates Design] --> B[Self-Assessment Checklist]
+    B --> C{Meets Standards?}
+    C -->|Yes| D[Build & Deploy]
+    C -->|No| E[Architecture Review]
+    E --> F[Decision & Guidance]
+    F --> D[Build & Deploy]
+	
+	Workflow Principles
+Self‑service first: Teams use checklists, templates, and standards.
 
-### **2. Platform Over Projects**  
-Invest in reusable capabilities that serve many teams.
+Review only when needed: Triggered by risk, not bureaucracy.
 
-### **3. Loose Coupling Everywhere**  
-APIs, events, and domain boundaries reduce friction and increase autonomy.
+Fast turnaround: Reviews completed within 48 hours.
 
-### **4. Reliability as a Feature**  
-Resiliency patterns, observability, and automated recovery are built in.
+🔑 4. Key Concepts
+Self‑Service First
+Teams rely on:
 
-### **5. Governance Without Bottlenecks**  
-Standards and automation guide teams — not committees.
+Checklists
 
-### **6. Validate in Production**  
-Architectural decisions are proven through real workloads.
+Templates
 
----
+Standards
 
-# 🏗️ 3. Target State Architecture  
+Reference architectures
 
-## **A. Domain‑Aligned Microservices**  
-- Organized around business capabilities  
-- Independently deployable  
-- Clear ownership and SLAs  
+This reduces friction and prevents architecture from becoming a bottleneck.
 
-## **B. API‑Led Integration Layer**  
-- System APIs  
-- Process APIs  
-- Experience APIs  
-- Standardized governance  
+Review Only When Needed
+Architecture reviews are triggered by:
 
-## **C. Event‑Driven Backbone**  
-- Event streaming  
-- Choreography  
-- Event sourcing  
+High‑risk changes
 
-## **D. Enterprise Data Platform**  
-- Lakehouse  
-- Real‑time pipelines  
-- Domain data products  
+Cross‑domain impacts
 
-## **E. Shared Platform Capabilities**  
-- Identity & access  
-- Observability  
-- Secrets management  
-- CI/CD  
-- API gateway  
-- Event broker  
+New technologies
 
-## **F. Zero‑Trust Security Model**  
-- Identity‑centric  
-- Policy‑driven  
-- Continuous verification  
+Major integration patterns
 
----
+Fast Turnaround
+Architecture commits to:
 
-# 📈 4. Business Outcomes  
+48‑hour SLA
 
-### **Speed**
-- 30–50% faster delivery  
-- Faster integration onboarding  
+Clear, actionable feedback
 
-### **Quality**
-- 40% fewer integration defects  
-- Standardized resiliency patterns  
+Lightweight documentation
 
-### **Scalability**
-- Horizontal scaling  
-- Event‑driven elasticity  
+🧩 5. Decision Rights (RACI)
+Decision Type	Product Team	Architecture	Platform Eng	Security
+API design	R	A	C	C
+Event schema	R	A	C	C
+Domain boundaries	C	A	C	C
+Technology selection	R	A	C	C
+Cloud architecture	R	C	A	C
+Data contracts	R	A	C	C
+Resiliency patterns	R	A	C	C
+Security controls	C	C	C	A
+R = Responsible, A = Accountable, C = Consulted
 
-### **Cost Efficiency**
-- Reduced duplication  
-- Lower operational overhead  
+Architecture is accountable for standards, patterns, and long‑term direction.
+Teams remain responsible for delivery and implementation.
 
-### **M&A Acceleration**
-- Faster onboarding of acquired systems  
-- Standardized integration patterns  
+🏛️ 6. Architecture Review Process
+A lightweight, predictable process that ensures alignment without slowing teams.
 
----
+Step 1 — Team Submits Design
+Teams provide:
 
-# 🧩 5. Architecture Building Blocks  
+High‑level architecture diagram
 
-### **1. Domain Architecture**
-- Capability model  
-- Domain boundaries  
-- Ownership model  
+API specs or event schemas
 
-### **2. Integration Architecture**
-- API standards  
-- Event schemas  
-- Canonical models  
+Key decisions + trade‑offs
 
-### **3. Platform Architecture**
-- Shared services  
-- Infrastructure modules  
-- Developer experience tooling  
+Risks or open questions
 
-### **4. Data Architecture**
-- Data mesh principles  
-- Data contracts  
-- Real‑time pipelines  
+Step 2 — Architecture Performs Review
+Architecture evaluates:
 
-### **5. Security Architecture**
-- Zero‑trust  
-- Policy‑as‑code  
-- Continuous compliance  
+Alignment with principles
 
----
+Cross‑domain impacts
 
-# 🛣️ 6. Multi‑Year Roadmap  
+Security and resiliency risks
 
-### **Year 1 — Foundation**
-- Establish domain boundaries  
-- Build API gateway & event broker  
-- Create platform engineering team  
+Opportunities for reuse
 
-### **Year 2 — Expansion**
-- Migrate key systems to API‑led patterns  
-- Introduce event‑driven workflows  
-- Launch enterprise data platform  
+Step 3 — Decision
+Architecture returns one of three outcomes:
 
-### **Year 3 — Optimization**
-- Mature platform capabilities  
-- Automate governance  
-- Optimize cost and performance  
+Approved
 
----
+Approved with recommendations
 
-# 🧪 7. Validation Approach  
-- Production pilots  
-- Load and resiliency testing  
-- Chaos engineering  
-- Observability dashboards  
-- KPIs tied to business outcomes  
+Requires revision
 
----
+Step 4 — Documentation
+For major decisions:
 
-# 📄 Related Artifacts  
-- `/architecture/diagrams/`  
-- `/governance/`  
-- `/strategy/architecture-principles.md`  
-- `/strategy/multi-year-roadmap.md`  
+An ADR is created
+
+Linked to the service or initiative
+
+Stored in the appropriate repo
+
+🧱 7. Architecture Artifacts
+Architecture produces and maintains three categories of artifacts:
+
+1. Strategic
+North Star Architecture
+
+Capability model
+
+Multi‑year roadmap
+
+2. Governance
+Architecture principles
+
+ADR templates
+
+API and event standards
+
+Security and resiliency patterns
+
+3. Technical
+Reference architectures
+
+C4 diagrams
+
+Integration patterns
+
+Cloud architecture blueprints
+
+🔄 8. Operating Cadence
+Cadence	Activity
+Weekly	Architecture sync with platform & engineering
+Bi‑Weekly	Design reviews
+Monthly	Program alignment + roadmap updates
+Quarterly	Strategic planning + capability model updates
+Annually	Architecture maturity assessment
+📈 9. KPIs & Success Measures
+Delivery
+Reduction in cycle time
+
+Faster integration onboarding
+
+% of reusable components adopted
+
+Quality
+Reduction in production incidents
+
+Reduction in integration defects
+
+Resiliency test pass rate
+
+Architecture Health
+% of services aligned to standards
+
+% of APIs with versioning & governance
+
+% of events with schema registry compliance
+
+Business Impact
+Cost savings from platform reuse
+
+Faster M&A integration
+
+Improved customer experience metrics
+
+📄 10. Related Artifacts
+/strategy/north-star-architecture.md
+
+/architecture/diagrams/
+
+/governance/adr-template.md
+
+/governance/raci.md
+
+/governance/architecture-review-process.md

@@ -116,7 +116,6 @@ Resiliency patterns	R	A	C	C
 Security controls	C	C	C	A
 R = Responsible, A = Accountable, C = Consulted
 
-Interpretation:  
 Architecture is accountable for standards, patterns, and long‑term direction.
 Teams remain responsible for delivery and implementation.
 

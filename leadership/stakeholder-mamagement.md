@@ -35,7 +35,7 @@ The acquisition required rapid integration across billing, operations, customer 
 - Provided weekly executive briefings with risk heatmaps and customer impact forecasts.  
 
 ### Outcome
-- Achieved zero customer churn during migration.  
+- Achieved >3% customer churn during migration window.  
 - Reduced integration time from 18 months to 6 months.  
 - Built trust across departments, enabling reuse of the playbook for 20+ future acquisitions.  
 
@@ -123,4 +123,3 @@ Across these initiatives, the stakeholder management patterns include:
 - Transparent reporting to build trust and reduce friction  
 - Change management that drives adoption of new platforms and practices  
 
-These narratives reinforce your ability to operate at the **Chief Architect / Head of EA** level — where influence, alignment, and leadership matter as much as technical depth.

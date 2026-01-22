@@ -99,11 +99,4 @@ Built a diversified partner ecosystem to ensure:
 
 ---
 
-## 🧭 Positioning Statement (For README or Resume)
-**Built and managed strategic vendor partnerships across cloud, integration, data, and observability platforms. Negotiated multi‑year agreements, established governance frameworks, influenced product roadmaps, and leveraged vendor engineering teams to accelerate delivery, reduce costs, and ensure architectural alignment across the enterprise.**
-
----
-
-## 📂 Recommended Repo Placement
-Place this file under:
 

@@ -80,164 +80,141 @@ flowchart LR
 
     Process --> Domains
 ```
+## 🧩 4. API‑Led Integration Patterns
 
-🧩 4. API‑Led Integration Patterns
-Experience APIs
-Channel‑specific
+### Experience APIs
+- Channel‑specific  
+- Tailored payloads  
+- No business logic  
+- Versioned and backward compatible  
 
-Tailored payloads
+### Process APIs
+- Orchestrate workflows  
+- Encapsulate business logic  
+- Reusable across channels  
+- Stateless  
 
-No business logic
+### System APIs
+- Stable interfaces to systems of record  
+- Canonical models  
+- Abstract legacy complexity  
 
-Versioned and backward compatible
+---
 
-Process APIs
-Orchestrate workflows
+## ⚡ 5. Event‑Driven Integration Patterns
 
-Encapsulate business logic
-
-Reusable across channels
-
-Stateless
-
-System APIs
-Stable interfaces to systems of record
-
-Canonical models
-
-Abstract legacy complexity
-
-⚡ 5. Event‑Driven Integration Patterns
-Domain Events
+### Domain Events
 Represent business facts:
+- OrderCreated  
+- CustomerUpdated  
+- PaymentAuthorized  
 
-OrderCreated
-
-CustomerUpdated
-
-PaymentAuthorized
-
-Integration Events
+### Integration Events
 Used for cross‑system synchronization:
+- CustomerSyncedToCRM  
+- InventoryAdjusted  
 
-CustomerSyncedToCRM
-
-InventoryAdjusted
-
-Event Choreography
+### Event Choreography
 Services react to events without central orchestration.
 
-Event Replay
+### Event Replay
 Used for:
+- Rebuilding state  
+- Multi‑region recovery  
+- New consumer onboarding  
 
-Rebuilding state
+---
 
-Multi‑region recovery
+## 🔄 6. Hybrid Integration Patterns (API + Events)
 
-New consumer onboarding
-
-🔄 6. Hybrid Integration Patterns (API + Events)
-1. API Command → Event Publish
+### 1. API Command → Event Publish
 A synchronous API call triggers an event.
 
-Example:
-
-Code
+**Example:**
 POST /orders
 → OrderCreated event emitted
-2. Event → API Call
+
+
+### 2. Event → API Call
 A service reacts to an event and calls an API.
 
-Example:
-
-Code
+**Example:**
 InventoryReserved event
 → call Shipping Process API
-3. API + Event Dual Write (Outbox Pattern)
+
+
+### 3. API + Event Dual Write (Outbox Pattern)
 Ensures consistency between DB and event bus.
 
-4. Event‑Driven Orchestration
+### 4. Event‑Driven Orchestration
 Process APIs orchestrate, events choreograph.
 
-🌐 7. Multi‑Region Integration Considerations
-API Layer
-Global load balancing
+---
 
-Active‑active routing
+## 🌐 7. Multi‑Region Integration Considerations
 
-Region‑local failover
+### API Layer
+- Global load balancing  
+- Active‑active routing  
+- Region‑local failover  
 
-Event Layer
-Cross‑region replication
+### Event Layer
+- Cross‑region replication  
+- Consumer offset synchronization  
+- DLQ per region  
 
-Consumer offset synchronization
+### Data Layer
+- Lakehouse replication  
+- Transactional DB replication  
+- Cache warming  
 
-DLQ per region
+---
 
-Data Layer
-Lakehouse replication
+## 🔐 8. Security & Governance
 
-Transactional DB replication
+### API Security
+- OAuth2 / OIDC  
+- mTLS  
+- Rate limiting  
+- Threat protection  
 
-Cache warming
+### Event Security
+- Topic‑level ACLs  
+- Producer/consumer identity  
+- Encryption in transit and at rest  
 
-🔐 8. Security & Governance
-API Security
-OAuth2 / OIDC
+### Governance
+- API standards  
+- Event schema standards  
+- Versioning rules  
+- Registry requirements  
 
-mTLS
+---
 
-Rate limiting
+## 🧪 9. Validation & Testing
 
-Threat protection
+### API Testing
+- Unit tests  
+- Contract tests  
+- Integration tests  
+- Performance tests  
 
-Event Security
-Topic‑level ACLs
+### Event Testing
+- Schema validation  
+- Backward compatibility  
+- Consumer lag tests  
+- Replay tests  
 
-Producer/consumer identity
+### End‑to‑End Testing
+- Cross‑domain workflows  
+- Multi‑region failover scenarios  
 
-Encryption in transit and at rest
+---
 
-Governance
-API standards
+## 📄 10. Related Artifacts
 
-Event schema standards
-
-Versioning rules
-
-Registry requirements
-
-🧪 9. Validation & Testing
-API Testing
-Unit tests
-
-Contract tests
-
-Integration tests
-
-Performance tests
-
-Event Testing
-Schema validation
-
-Backward compatibility
-
-Consumer lag tests
-
-Replay tests
-
-End‑to‑End Testing
-Cross‑domain workflows
-
-Multi‑region failover scenarios
-
-📄 10. Related Artifacts
-/governance/api-standards-and-governance-guide.md
-
-/governance/event-schema-standards.md
-
-/architecture/reference-architectures/api-led-event-driven-multi-region.md
-
-/architecture/reference-architectures/multi-region-failover-playbook.md
-
-/architecture/integration-architecture.md
+- `/governance/api-standards-and-governance-guide.md`  
+- `/governance/event-schema-standards.md`  
+- `/architecture/reference-architectures/api-led-event-driven-multi-region.md`  
+- `/architecture/reference-architectures/multi-region-failover-playbook.md`  
+- `/architecture/integration-architecture.md`  

@@ -127,14 +127,3 @@ Year 3 (Scale & Differentiate)
 
 ---
 
-# 📘 Recommended Repo Placement
-
-/strategy
-/roadmaps
-
-
-- `/architecture/` → C4 diagrams, reference architectures  
-- `/governance/` → ARB standards, API patterns, AI governance  
-- `/case-studies/` → BullsEye, Retail, Medicaid, etc.  
-- `/modernization/` → Monolith → Microservices decomposition artifacts  
-

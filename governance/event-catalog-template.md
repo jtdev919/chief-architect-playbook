@@ -53,7 +53,8 @@ _Link to schema in the Event Schema Registry_
     "traceId": "xyz-789"
   }
 }
-```## 🔢 Versioning
+```
+## 🔢 Versioning
 
 **Current Version:**  
 **Previous Versions:**  

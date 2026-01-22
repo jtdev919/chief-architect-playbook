@@ -48,9 +48,6 @@ Performance and resiliency patterns
 
 This model ensures architecture is proactive, not reactive.
 
-🏗️ 3. Governance Workflow
-
----
 
 # 🏗️ 2. Architecture Governance Workflow  
 

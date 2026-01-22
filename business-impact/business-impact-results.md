@@ -38,7 +38,7 @@ Owned enterprise-wide digital transformation, improving availability to 99.99%, 
 
 ### Business Impact
 - Completed full migration in **6 months** (industry standard: 12–18)  
-- Acheived >3% Customer churn during migration  period
+- Acheived less than 3% Customer churn during migration period
 - Consolidated 3 billing platforms → 1, reducing complexity **60%**  
 - Saved **$2.3M annually** in licensing + operational costs  
 - Framework reused for **20+** subsequent acquisition evaluations  

@@ -35,7 +35,7 @@ The acquisition required rapid integration across billing, operations, customer 
 - Provided weekly executive briefings with risk heatmaps and customer impact forecasts.  
 
 ### Outcome
-- Achieved >3% customer churn during migration window.  
+- Achieved less tan 3% customer churn during migration window.  
 - Reduced integration time from 18 months to 6 months.  
 - Built trust across departments, enabling reuse of the playbook for 20+ future acquisitions.  
 
